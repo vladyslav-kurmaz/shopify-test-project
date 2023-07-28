@@ -8,6 +8,9 @@
 <script src="{{ 'jquery-3.7.0.js' | asset_url }}" defer="defer"></script>
 <script src="{{ '1.8.1_slick_slick.min.js' | asset_url }}" defer="defer"></script>
 
+<script>
+  console.log('slider_init')
+</script>
 
 {% schema %}
 {
@@ -25,7 +28,14 @@
   "blocks": [
     {
       "name": "Proposal product",
-      "type": "product"
+      "type": "product",
+      "settings": [
+        {
+          "type": "product",
+          "id": "proposal_product",
+          "label": "Our proposal product"
+    }
+      ]
     }
   ],
   "presets": [
