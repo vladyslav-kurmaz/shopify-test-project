@@ -4,9 +4,14 @@
   {%- endfor -%}
 </div>
 
+{{ '1.8.1_slick_slick.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'jquery-3.7.0.js' | asset_url }}" defer="defer"></script>
+<script src="{{ '1.8.1_slick_slick.min.js' | asset_url }}" defer="defer"></script>
+
+
 {% schema %}
 {
-  "name": "t:sections.apps.name",
+  "name": "Slider Products",
   "tag": "section",
   "class": "section",
   "settings": [
@@ -19,12 +24,13 @@
   ],
   "blocks": [
     {
-      "type": "@app"
+      "name": "Proposal product",
+      "type": "product"
     }
   ],
   "presets": [
     {
-      "name": "t:sections.apps.presets.name"
+      "name": "Slider Products"
     }
   ]
 }
