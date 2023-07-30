@@ -66,10 +66,34 @@
         "padding_top": 44,
         "padding_bottom": 36
       }
+    },
+    "ffa548cd-364a-4886-9466-b60e625c34e8": {
+      "type": "section-slider",
+      "blocks": {
+        "7a249c78-dc57-4541-b809-a4468fbf2395": {
+          "type": "product",
+          "settings": {
+            "proposal_product": "air-jordan-1-retro-high-og-unc-toe"
+          }
+        },
+        "73dcbf5a-827c-4500-9a8f-9ccdbe00b3e4": {
+          "type": "product",
+          "settings": {
+            "proposal_product": "кросівки-stan-smith"
+          }
+        }
+      },
+      "block_order": [
+        "7a249c78-dc57-4541-b809-a4468fbf2395",
+        "73dcbf5a-827c-4500-9a8f-9ccdbe00b3e4"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
     "image_banner",
-    "featured_collection"
+    "featured_collection",
+    "ffa548cd-364a-4886-9466-b60e625c34e8"
   ]
 }
