@@ -81,11 +81,32 @@
           "settings": {
             "proposal_product": "кросівки-stan-smith"
           }
+        },
+        "7d4b9511-1cd3-4970-8d76-a59ee1b02871": {
+          "type": "product",
+          "settings": {
+            "proposal_product": "football-shoes-for-women"
+          }
+        },
+        "60b56a4e-c0c9-42fa-90fe-174bfbd89dd8": {
+          "type": "product",
+          "settings": {
+            "proposal_product": "high-quality-sports-shoes"
+          }
+        },
+        "6bd083bd-5d33-4c8d-aa11-69c8eba08bc4": {
+          "type": "product",
+          "settings": {
+            "proposal_product": "copy-of-football-shoes-for-boys"
+          }
         }
       },
       "block_order": [
         "7a249c78-dc57-4541-b809-a4468fbf2395",
-        "73dcbf5a-827c-4500-9a8f-9ccdbe00b3e4"
+        "73dcbf5a-827c-4500-9a8f-9ccdbe00b3e4",
+        "7d4b9511-1cd3-4970-8d76-a59ee1b02871",
+        "60b56a4e-c0c9-42fa-90fe-174bfbd89dd8",
+        "6bd083bd-5d33-4c8d-aa11-69c8eba08bc4"
       ],
       "settings": {
       }

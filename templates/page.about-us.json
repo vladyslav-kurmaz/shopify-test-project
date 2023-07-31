@@ -9,6 +9,26 @@
     },
     "4afe15bf-c322-4c23-822a-e69c07634cbe": {
       "type": "image-banner",
+      "blocks": {
+        "b8ac7606-c1d8-46f2-ab7f-bab7fa3706d0": {
+          "type": "text",
+          "settings": {
+            "text": "<strong>With our shoes you can stay better<\/strong>",
+            "text_style": "subtitle"
+          }
+        },
+        "a1d5bad6-9954-4822-9f6e-e882bd113f44": {
+          "type": "heading",
+          "settings": {
+            "heading": "We are company that sell nice shoes for everyday use",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "b8ac7606-c1d8-46f2-ab7f-bab7fa3706d0",
+        "a1d5bad6-9954-4822-9f6e-e882bd113f44"
+      ],
       "settings": {
         "image": "shopify:\/\/shop_images\/run-nike-running-shoes-646cdd1a19c41.jpg",
         "image_overlay_opacity": 0,
