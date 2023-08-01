@@ -35,7 +35,11 @@
   document.addEventListener('DOMContentLoaded', function() {
     console.log('slider_init')
     console.log({{section.blocks.size}})
-    $('#shopify-section-{{section.id}} .slider-product-proposal__slider-list').slick()
+    $('#shopify-section-{{section.id}} .slider-product-proposal__slider-list').slick({
+      infinite: true,
+      slidesToShow: {{section.settings.slider_items}},
+      slidesToScroll: 3
+    });
   })
   
 </script>
@@ -45,7 +49,18 @@
   "name": "Slider Products",
   "tag": "section",
   "class": "section",
-  "settings": [],
+  "settings": [
+    {
+      "type": "range",
+      "id": "slider_items",
+      "min": 1,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "itesm per page",
+      "default": 2
+    }
+  ],
   "blocks": [
     {
       "name": "Proposal product",
