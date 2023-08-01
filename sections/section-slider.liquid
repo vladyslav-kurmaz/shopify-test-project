@@ -1,12 +1,12 @@
 {% if section.blocks.size > 0 %}
 
-  <div class="slider_proposal">
-    <div class="page-width slider_proposal__container">
-      <div class="slider_proposal__content">
-        <h2 class="slider_proposal__title">
+  <div class="slider-product-proposal">
+    <div class="page-width slider-product-proposal__container">
+      <div class="slider-product-proposal__content">
+        <h2 class="slider-product-proposal__title">
           Product Title
         </h2>
-        <div class="slider_proposal__subtitle">
+        <div class="slider-product-proposal__subtitle">
           Product Subtitle
         </div>
       </div>
@@ -14,9 +14,25 @@
         <div class="slider-product-proposal__slider-list">
           {% for block in section.blocks %}
             {% if block.settings.proposal_product != blank %}
-              {%  assign productTitle = block.settings.proposal_product %}
+              {%  assign product = block.settings.proposal_product %}
+              
               <div class="slider-product-proposal__slider-item">
-                <h4 class="slider_item__title">{{productTitle.title}}</h4>
+                <a href={{product.url}} class="slider-item__link"></a>
+                <div class="slider-item__img">
+                  <img src={{product.featured_image | img_url: '700px'}} alt={{product.title}} class="slider-item__picture" loading="lazy"/>
+                </div>
+                <h4 class="slider_item__title">{{product.title}}</h4>
+
+                {% if product.content != blank %}
+                  <div class="slider-item__description">
+                    {{product.content | truncate: 120, '...'}}
+                  </div>
+                {% endif %} 
+                
+                <div class="slide__item-price">
+                  {{product.price | money_with_currency}}
+                </div>
+
               </div> 
             {% endif %}
           {% endfor %} 
@@ -33,12 +49,27 @@
 
 <script>
   document.addEventListener('DOMContentLoaded', function() {
-    console.log('slider_init')
-    console.log({{section.blocks.size}})
     $('#shopify-section-{{section.id}} .slider-product-proposal__slider-list').slick({
       infinite: true,
       slidesToShow: {{section.settings.slider_items}},
-      slidesToScroll: 3
+      slidesToScroll: {{section.settings.slider_items}},
+      speed: 1000,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: {{section.settings.slider_items_tab}},
+            slidesToScroll: {{section.settings.slider_items_tab}},
+          }
+        },
+        {
+          breakpoint: 576,
+          settings: {
+            slidesToShow: {{section.settings.slider_items_mob}},
+            slidesToScroll: {{section.settings.slider_items_mob}}
+          }
+        }
+      ]
     });
   })
   
@@ -58,7 +89,27 @@
       "step": 1,
       "unit": "px",
       "label": "itesm per page",
+      "default": 4
+    },
+    {
+      "type": "range",
+      "id": "slider_items_tab",
+      "min": 1,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "itesm per page",
       "default": 2
+    },
+    {
+      "type": "range",
+      "id": "slider_items_mob",
+      "min": 1,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "itesm per page",
+      "default": 1
     }
   ],
   "blocks": [

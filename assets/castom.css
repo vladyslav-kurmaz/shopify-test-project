@@ -1,0 +1,139 @@
+/* Slick slider start */
+.slick-slider {
+
+}
+
+.slick-slider .slick-arrow {
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 50px;
+  width: 50px;
+  font-size: 0;
+  line-height: 0;
+  overflow: hidden;
+  background-color: orange;
+  color: green;
+  z-index: 1;
+  border: none;
+  outline: none;
+  border-radius: 100%;
+  cursor: pointer;
+  transition: 0.3s linear all;
+  opacity: 1;
+}
+
+.slick-slider .slick-arrow:hover {
+  opacity: .8;
+}
+
+.slick-slider .slick-arrow:before {
+  position: absolute;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: inherit;
+  color: currentColor;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.slick-slider .slick-prev {
+  left: -25px;
+}
+
+.slick-slider .slick-prev::before {
+  content: '<';
+}
+
+.slick-slider .slick-next {
+  right: -25px;
+}
+
+.slick-slider .slick-next::before {
+  content: '>';
+}
+
+/* Slick slider End */
+
+.slider-product-proposal {
+  padding: 50px 0;
+}
+
+.slider-product-proposal__container {
+
+}
+
+.slider-product-proposal__content {
+
+}
+
+.slider-product-proposal__title {
+  display: block;
+  width: 100%;
+  font-size: 52px;
+  line-height: 1.1;
+  text-align: center;
+}
+
+.slider-product-proposal__subtitle {
+  display: block;
+  width: 100%;
+  font-size: 24px;
+  line-height: 1.4;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.slider-product-proposal__slider {
+
+}
+
+.slider-product-proposal__slider-list {
+
+}
+
+.slider-product-proposal__slider-item {
+  
+}
+
+a.slider-item__link {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  cursor: pointer;
+  transition: .3s linear transform;
+}
+
+.slider-item__img {
+  width: 100%;
+  height: 300%;
+  overflow: hidden;
+}
+
+.slider-item__picture {
+  width: inherit;
+  height: inherit;
+  object-fit: contain;
+  transition: .3s linear transform;
+}
+
+a.slider-item__link:hover + .slider-item__img .slider-item__picture {
+  background-color: red;
+  transform: scale(1.3);
+}
+
+.slider_item__title {
+
+}
+
+.slider-item__description {
+
+}
+
+.slide__item-price {
+
+}

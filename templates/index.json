@@ -1,5 +1,97 @@
 {
   "sections": {
+    "ffa548cd-364a-4886-9466-b60e625c34e8": {
+      "type": "section-slider",
+      "blocks": {
+        "7a249c78-dc57-4541-b809-a4468fbf2395": {
+          "type": "product",
+          "settings": {
+            "proposal_product": "air-jordan-1-retro-high-og-unc-toe"
+          }
+        },
+        "73dcbf5a-827c-4500-9a8f-9ccdbe00b3e4": {
+          "type": "product",
+          "settings": {
+            "proposal_product": "кросівки-stan-smith"
+          }
+        },
+        "7d4b9511-1cd3-4970-8d76-a59ee1b02871": {
+          "type": "product",
+          "settings": {
+            "proposal_product": "football-shoes-for-women"
+          }
+        },
+        "60b56a4e-c0c9-42fa-90fe-174bfbd89dd8": {
+          "type": "product",
+          "settings": {
+            "proposal_product": "high-quality-sports-shoes"
+          }
+        },
+        "6bd083bd-5d33-4c8d-aa11-69c8eba08bc4": {
+          "type": "product",
+          "settings": {
+            "proposal_product": "copy-of-football-shoes-for-boys"
+          }
+        }
+      },
+      "block_order": [
+        "7a249c78-dc57-4541-b809-a4468fbf2395",
+        "73dcbf5a-827c-4500-9a8f-9ccdbe00b3e4",
+        "7d4b9511-1cd3-4970-8d76-a59ee1b02871",
+        "60b56a4e-c0c9-42fa-90fe-174bfbd89dd8",
+        "6bd083bd-5d33-4c8d-aa11-69c8eba08bc4"
+      ],
+      "settings": {
+        "slider_items": 3,
+        "slider_scroll": "2"
+      }
+    },
+    "536fe110-afab-42fc-9b2d-88e6668dba15": {
+      "type": "section-slider",
+      "blocks": {
+        "f46e1415-44cf-437a-bad4-4e7104998cd1": {
+          "type": "product",
+          "settings": {
+            "proposal_product": "air-jordan-1-retro-high-og-unc-toe"
+          }
+        },
+        "bc21e7c2-1745-4ffa-b0d1-93864edae0c3": {
+          "type": "product",
+          "settings": {
+            "proposal_product": "кросівки-stan-smith"
+          }
+        },
+        "4653789b-178f-4b84-aff2-7e250c6ae59b": {
+          "type": "product",
+          "settings": {
+            "proposal_product": "football-shoes-for-women"
+          }
+        },
+        "0b64954a-e32a-4120-adbc-36e5abae4a6c": {
+          "type": "product",
+          "settings": {
+            "proposal_product": "joggers-for-all-ages"
+          }
+        },
+        "1a4995ca-3020-4007-b3c8-d5e474e487eb": {
+          "type": "product",
+          "settings": {
+            "proposal_product": "sports-shoes-of-high-quality"
+          }
+        }
+      },
+      "block_order": [
+        "f46e1415-44cf-437a-bad4-4e7104998cd1",
+        "bc21e7c2-1745-4ffa-b0d1-93864edae0c3",
+        "4653789b-178f-4b84-aff2-7e250c6ae59b",
+        "0b64954a-e32a-4120-adbc-36e5abae4a6c",
+        "1a4995ca-3020-4007-b3c8-d5e474e487eb"
+      ],
+      "settings": {
+        "slider_items": 2,
+        "slider_scroll": "2"
+      }
+    },
     "image_banner": {
       "type": "image-banner",
       "blocks": {
@@ -66,55 +158,12 @@
         "padding_top": 44,
         "padding_bottom": 36
       }
-    },
-    "ffa548cd-364a-4886-9466-b60e625c34e8": {
-      "type": "section-slider",
-      "blocks": {
-        "7a249c78-dc57-4541-b809-a4468fbf2395": {
-          "type": "product",
-          "settings": {
-            "proposal_product": "air-jordan-1-retro-high-og-unc-toe"
-          }
-        },
-        "73dcbf5a-827c-4500-9a8f-9ccdbe00b3e4": {
-          "type": "product",
-          "settings": {
-            "proposal_product": "кросівки-stan-smith"
-          }
-        },
-        "7d4b9511-1cd3-4970-8d76-a59ee1b02871": {
-          "type": "product",
-          "settings": {
-            "proposal_product": "football-shoes-for-women"
-          }
-        },
-        "60b56a4e-c0c9-42fa-90fe-174bfbd89dd8": {
-          "type": "product",
-          "settings": {
-            "proposal_product": "high-quality-sports-shoes"
-          }
-        },
-        "6bd083bd-5d33-4c8d-aa11-69c8eba08bc4": {
-          "type": "product",
-          "settings": {
-            "proposal_product": "copy-of-football-shoes-for-boys"
-          }
-        }
-      },
-      "block_order": [
-        "7a249c78-dc57-4541-b809-a4468fbf2395",
-        "73dcbf5a-827c-4500-9a8f-9ccdbe00b3e4",
-        "7d4b9511-1cd3-4970-8d76-a59ee1b02871",
-        "60b56a4e-c0c9-42fa-90fe-174bfbd89dd8",
-        "6bd083bd-5d33-4c8d-aa11-69c8eba08bc4"
-      ],
-      "settings": {
-      }
     }
   },
   "order": [
+    "ffa548cd-364a-4886-9466-b60e625c34e8",
+    "536fe110-afab-42fc-9b2d-88e6668dba15",
     "image_banner",
-    "featured_collection",
-    "ffa548cd-364a-4886-9466-b60e625c34e8"
+    "featured_collection"
   ]
 }
